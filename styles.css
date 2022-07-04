@@ -14,6 +14,7 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .navbar img {
   display: inline-block;
@@ -25,15 +26,20 @@
 }
 .main-content {
   background: lightgray;
-  height: 110vh;
+  height: 200vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 10px;
   text-align: center;
+  justify-content: space-around;
 }
 .main-content > div {
   padding: 5px;
+}
+ul li {
+  display: inline-block;
+  padding: 1px;
+  list-style-type: disc;
 }
 footer {
   background: rgb(246, 240, 240);
@@ -42,6 +48,9 @@ footer {
   align-items: center;
   justify-content: flex-end;
 }
+p {
+  text-transform: capitalize;
+}
 
 a {
   cursor: pointer;
@@ -49,6 +58,6 @@ a {
   padding: 1rem;
 }
 
-p {
-  text-transform: capitalize;
+a:hover {
+  color: black;
 }
